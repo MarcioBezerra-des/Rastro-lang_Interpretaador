@@ -1,7 +1,6 @@
 # Rastro Lang - Interpretador
 
 ![Java](https://img.shields.io/badge/Java-8+-orange.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## 📝 Visão Geral
 
@@ -95,4 +94,31 @@ Controla se o robô desenha ou não enquanto se move.
 ```
 CANETA BAIXO  // Ativa o desenho
 CANETA CIMA   // Desativa o desenho
+```
+### MOVER
+Move o robô em uma direção por N passos.
+```
+MOVER FRENTE 5     // Move para frente 5 posições
+MOVER DIREITA 3    // Move para direita 3 posições
+MOVER ESQUERDA 2   // Move para esquerda 2 posições
+MOVER CIMA 4       // Move para cima 4 posições
+```
+### REPETIR
+Executa um bloco de comandos N vezes.
+```
+REPETIR 3 {
+    MOVER FRENTE 2
+    MOVER DIREITA 2
+}
+```
+## 🧪 Testes
+Os arquivos de teste estão incluídos no diretório `projeto/`:
+
+* `arquivo.rastro` - Teste básico de movimentação
+* `quadrado.rastro` - Desenha forma quadrada
+* `exemplo_completo.rastro` - Exemplo com múltiplos comandos e comentários
+Execute qualquer teste (ex: arquivo.rastro):
+```
+# Dentro do diretório projeto/
+java -cp bin Compilador arquivo.rastro
 ```
