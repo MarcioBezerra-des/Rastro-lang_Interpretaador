@@ -1,240 +1,477 @@
-# Rastro Lang - Interpretador# Rastro Lang - Interpretador
+# Rastro Lang - Interpretador# Rastro Lang - Interpretador# Rastro Lang - Interpretador
 
 
 
-![Java](https://img.shields.io/badge/Java-8+-orange.svg)![Java](https://img.shields.io/badge/Java-8+-orange.svg)
+![Java](https://img.shields.io/badge/Java-8+-orange.svg)
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## 📝 Visão Geral
+![Java](https://img.shields.io/badge/Java-8+-orange.svg)![Java](https://img.shields.io/badge/Java-8+-orange.svg)
 
 ## 📝 Visão Geral
 
-**Rastro Lang** é uma linguagem de programação educacional baseada em comandos para controlar um robô virtual que desenha rastros em uma grade 2D. O projeto implementa um interpretador completo com análise léxica, sintática e execução de comandos.
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 **Rastro Lang** é uma linguagem de programação educacional baseada em comandos para controlar um robô virtual que desenha rastros em uma grade 2D. O projeto implementa um interpretador completo com análise léxica, sintática e execução de comandos.
 
-O robô se move em uma grade 50x50 e pode deixar rastros marcados com `*` quando a caneta está abaixada. Ideal para ensino de conceitos de compiladores e interpretadores.
+## 📝 Visão Geral
 
 O robô se move em uma grade 50x50 e pode deixar rastros marcados com `*` quando a caneta está abaixada. Ideal para ensino de conceitos de compiladores e interpretadores.
 
-## ✨ Funcionalidades
+## 📝 Visão Geral
 
 ## 📂 Estrutura do Repositório
 
-- **Controle de Caneta**: Liga/desliga o desenho do rastro
+**Rastro Lang** é uma linguagem de programação educacional baseada em comandos para controlar um robô virtual que desenha rastros em uma grade 2D. O projeto implementa um interpretador completo com análise léxica, sintática e execução de comandos.
 
-```- **Movimentação**: 4 direções (FRENTE, CIMA, DIREITA, ESQUERDA)
+```
 
-Rastro-lang_Interpretaador/- **Repetição**: Estruturas de loop com blocos
+Rastro-lang_Interpretaador/**Rastro Lang** é uma linguagem de programação educacional baseada em comandos para controlar um robô virtual que desenha rastros em uma grade 2D. O projeto implementa um interpretador completo com análise léxica, sintática e execução de comandos.
 
-├── projeto/              # Código fonte do interpretador- **Comentários**: Suporte a comentários de linha com `//`
+├── projeto/              # Código fonte do interpretador
 
-│   ├── src/             # Arquivos fonte Java- **Grid Visual**: Visualização ASCII 50x50 do trajeto do robô
+│   ├── src/             # Arquivos fonte JavaO robô se move em uma grade 50x50 e pode deixar rastros marcados com `*` quando a caneta está abaixada. Ideal para ensino de conceitos de compiladores e interpretadores.
 
 │   ├── bin/             # Arquivos compilados
 
-│   ├── lib/             # Dependências## 🛠️ Stack Técnica
+│   ├── lib/             # DependênciasO robô se move em uma grade 50x50 e pode deixar rastros marcados com `*` quando a caneta está abaixada. Ideal para ensino de conceitos de compiladores e interpretadores.
 
 │   ├── .vscode/         # Configurações VS Code
 
-│   └── *.rastro         # Exemplos de programas### Linguagem
+│   └── *.rastro         # Exemplos de programas## ✨ Funcionalidades
 
-├── doc/                 # Documentação do projeto- **Java 8+** (compatível até Java 17+)
+├── doc/                 # Documentação do projeto
 
-└── README.md           # Este arquivo
+└── README.md           # Este arquivo## 📂 Estrutura do Repositório
 
-```### Arquitetura do Interpretador
+```
+
+- **Controle de Caneta**: Liga/desliga o desenho do rastro
+
+## ✨ Funcionalidades
+
+```- **Movimentação**: 4 direções (FRENTE, CIMA, DIREITA, ESQUERDA)
+
+- **Controle de Caneta**: Liga/desliga o desenho do rastro
+
+- **Movimentação**: 4 direções (FRENTE, CIMA, DIREITA, ESQUERDA)Rastro-lang_Interpretaador/- **Repetição**: Estruturas de loop com blocos
+
+- **Repetição**: Estruturas de loop com blocos
+
+- **Comentários**: Suporte a comentários de linha com `//`├── projeto/              # Código fonte do interpretador- **Comentários**: Suporte a comentários de linha com `//`
+
+- **Grid Visual**: Visualização ASCII 50x50 do trajeto do robô
+
+│   ├── src/             # Arquivos fonte Java- **Grid Visual**: Visualização ASCII 50x50 do trajeto do robô
+
+## 🛠️ Stack Técnica
+
+│   ├── bin/             # Arquivos compilados
+
+### Linguagem
+
+- **Java 8+** (compatível até Java 17+)│   ├── lib/             # Dependências## 🛠️ Stack Técnica
+
+
+
+### Arquitetura do Interpretador│   ├── .vscode/         # Configurações VS Code
 
 - **Análise Léxica** (Scanner/Lexer)
 
-## ✨ Funcionalidades- **Análise Sintática** (Parser Descendente Recursivo)
+- **Análise Sintática** (Parser Descendente Recursivo)│   └── *.rastro         # Exemplos de programas### Linguagem
 
 - **AST** (Abstract Syntax Tree)
 
-- **Controle de Caneta**: Liga/desliga o desenho do rastro- **Interpretador** (Tree-Walking Interpreter)
+- **Interpretador** (Tree-Walking Interpreter)├── doc/                 # Documentação do projeto- **Java 8+** (compatível até Java 17+)
 
-- **Movimentação**: 4 direções (FRENTE, CIMA, DIREITA, ESQUERDA)
 
-- **Repetição**: Estruturas de loop com blocos### Componentes Principais
 
-- **Comentários**: Suporte a comentários de linha com `//`
+### Componentes Principais└── README.md           # Este arquivo
 
-- **Grid Visual**: Visualização ASCII 50x50 do trajeto do robô| Componente | Descrição |
+
+
+| Componente | Descrição |```### Arquitetura do Interpretador
 
 |------------|-----------|
 
-## 🛠️ Stack Técnica| `TipoToken.java` | Enum com todos os tokens da linguagem |
+| `TipoToken.java` | Enum com todos os tokens da linguagem |- **Análise Léxica** (Scanner/Lexer)
 
 | `Token.java` | Representação de token (tipo, lexema, literal) |
 
-### Linguagem| `AnalisadorLexico.java` | Tokenizador que converte código fonte em tokens |
+| `AnalisadorLexico.java` | Tokenizador que converte código fonte em tokens |## ✨ Funcionalidades- **Análise Sintática** (Parser Descendente Recursivo)
 
-- **Java 8+** (compatível até Java 17+)| `AnalisadorSintatico.java` | Parser que gera a AST |
+| `AnalisadorSintatico.java` | Parser que gera a AST |
 
-| `Comando.java` | Interface para nós da AST |
+| `Comando.java` | Interface para nós da AST |- **AST** (Abstract Syntax Tree)
 
-### Arquitetura do Interpretador| `ComandoMover.java` | Nó AST para comando MOVER |
+| `ComandoMover.java` | Nó AST para comando MOVER |
 
-- **Análise Léxica** (Scanner/Lexer)| `ComandoCaneta.java` | Nó AST para comando CANETA |
+| `ComandoCaneta.java` | Nó AST para comando CANETA |- **Controle de Caneta**: Liga/desliga o desenho do rastro- **Interpretador** (Tree-Walking Interpreter)
 
-- **Análise Sintática** (Parser Descendente Recursivo)| `ComandoRepetir.java` | Nó AST para comando REPETIR |
+| `ComandoRepetir.java` | Nó AST para comando REPETIR |
 
-- **AST** (Abstract Syntax Tree)| `Robo.java` | Estado do robô (posição x,y e caneta) |
+| `Robo.java` | Estado do robô (posição x,y e caneta) |- **Movimentação**: 4 direções (FRENTE, CIMA, DIREITA, ESQUERDA)
 
-- **Interpretador** (Tree-Walking Interpreter)| `Grid.java` | Grade 50x50 para renderização |
+| `Grid.java` | Grade 50x50 para renderização |
 
-| `Interpretador.java` | Executor da AST |
+| `Interpretador.java` | Executor da AST |- **Repetição**: Estruturas de loop com blocos### Componentes Principais
 
-### Componentes Principais| `Compilador.java` | Ponto de entrada (main) |
+| `Compilador.java` | Ponto de entrada (main) |
 
+- **Comentários**: Suporte a comentários de linha com `//`
 
+## 📖 Como Funciona
 
-| Componente | Descrição |## 📖 Como Funciona
+- **Grid Visual**: Visualização ASCII 50x50 do trajeto do robô| Componente | Descrição |
 
-|------------|-----------|
+### 1. Análise Léxica
 
-| `TipoToken.java` | Enum com todos os tokens da linguagem |### 1. Análise Léxica
-
-| `Token.java` | Representação de token (tipo, lexema, literal) |O `AnalisadorLexico` lê o código fonte caractere por caractere e gera uma lista de tokens:
-
-| `AnalisadorLexico.java` | Tokenizador que converte código fonte em tokens |- Identifica palavras-chave (CANETA, MOVER, REPETIR, etc.)
-
-| `AnalisadorSintatico.java` | Parser que gera a AST |- Reconhece números inteiros
-
-| `Comando.java` | Interface para nós da AST |- Identifica símbolos (`{`, `}`)
-
-| `ComandoMover.java` | Nó AST para comando MOVER |- Ignora comentários (`//`) e espaços em branco
-
-| `ComandoCaneta.java` | Nó AST para comando CANETA |
-
-| `ComandoRepetir.java` | Nó AST para comando REPETIR |### 2. Análise Sintática
-
-| `Robo.java` | Estado do robô (posição x,y e caneta) |O `AnalisadorSintatico` usa os tokens para construir uma AST seguindo a gramática:
-
-| `Grid.java` | Grade 50x50 para renderização |```
-
-| `Interpretador.java` | Executor da AST |programa   → comando*
-
-| `Compilador.java` | Ponto de entrada (main) |comando    → cmd_mover | cmd_caneta | cmd_repetir
-
-cmd_mover  → 'MOVER' direcao 'NUMERO'
-
-## 📖 Como Funcionacmd_caneta → 'CANETA' ('CIMA' | 'BAIXO')
-
-cmd_repetir → 'REPETIR' 'NUMERO' '{' programa '}'
-
-### 1. Análise Léxicadirecao    → 'FRENTE' | 'DIREITA' | 'ESQUERDA' | 'CIMA'
-
-O `AnalisadorLexico` lê o código fonte caractere por caractere e gera uma lista de tokens:```
+O `AnalisadorLexico` lê o código fonte caractere por caractere e gera uma lista de tokens:|------------|-----------|
 
 - Identifica palavras-chave (CANETA, MOVER, REPETIR, etc.)
 
-- Reconhece números inteiros### 3. Interpretação
+- Reconhece números inteiros## 🛠️ Stack Técnica| `TipoToken.java` | Enum com todos os tokens da linguagem |
 
-- Identifica símbolos (`{`, `}`)O `Interpretador` percorre a AST e executa cada comando:
+- Identifica símbolos (`{`, `}`)
 
-- Ignora comentários (`//`) e espaços em branco- Atualiza a posição do robô
+- Ignora comentários (`//`) e espaços em branco| `Token.java` | Representação de token (tipo, lexema, literal) |
 
-- Controla o estado da caneta
 
-### 2. Análise Sintática- Desenha na grade quando a caneta está abaixada
 
-O `AnalisadorSintatico` usa os tokens para construir uma AST seguindo a gramática:- Exibe a grade final no console
+### 2. Análise Sintática### Linguagem| `AnalisadorLexico.java` | Tokenizador que converte código fonte em tokens |
+
+O `AnalisadorSintatico` usa os tokens para construir uma AST seguindo a gramática:
+
+```- **Java 8+** (compatível até Java 17+)| `AnalisadorSintatico.java` | Parser que gera a AST |
+
+programa   → comando*
+
+comando    → cmd_mover | cmd_caneta | cmd_repetir| `Comando.java` | Interface para nós da AST |
+
+cmd_mover  → 'MOVER' direcao 'NUMERO'
+
+cmd_caneta → 'CANETA' ('CIMA' | 'BAIXO')### Arquitetura do Interpretador| `ComandoMover.java` | Nó AST para comando MOVER |
+
+cmd_repetir → 'REPETIR' 'NUMERO' '{' programa '}'
+
+direcao    → 'FRENTE' | 'DIREITA' | 'ESQUERDA' | 'CIMA'- **Análise Léxica** (Scanner/Lexer)| `ComandoCaneta.java` | Nó AST para comando CANETA |
 
 ```
 
-programa   → comando*## 🚀 Como Executar
+- **Análise Sintática** (Parser Descendente Recursivo)| `ComandoRepetir.java` | Nó AST para comando REPETIR |
 
-comando    → cmd_mover | cmd_caneta | cmd_repetir
+### 3. Interpretação
 
-cmd_mover  → 'MOVER' direcao 'NUMERO'### Pré-requisitos
+O `Interpretador` percorre a AST e executa cada comando:- **AST** (Abstract Syntax Tree)| `Robo.java` | Estado do robô (posição x,y e caneta) |
 
-cmd_caneta → 'CANETA' ('CIMA' | 'BAIXO')- Java JDK 8 ou superior
+- Atualiza a posição do robô
 
-cmd_repetir → 'REPETIR' 'NUMERO' '{' programa '}'- Terminal/PowerShell
-
-direcao    → 'FRENTE' | 'DIREITA' | 'ESQUERDA' | 'CIMA'
-
-```### Compilar o Projeto
-
-
-
-### 3. Interpretação```bash
-
-O `Interpretador` percorre a AST e executa cada comando:# No diretório raiz do projeto
-
-- Atualiza a posição do robôjavac -source 8 -target 8 -d bin src\*.java
-
-- Controla o estado da caneta```
+- Controla o estado da caneta- **Interpretador** (Tree-Walking Interpreter)| `Grid.java` | Grade 50x50 para renderização |
 
 - Desenha na grade quando a caneta está abaixada
 
-- Exibe a grade final no console### Executar um Programa
+- Exibe a grade final no console| `Interpretador.java` | Executor da AST |
 
 
 
-## 🚀 Como Executar```bash
+## 🚀 Como Executar### Componentes Principais| `Compilador.java` | Ponto de entrada (main) |
 
-java -cp bin Compilador arquivo.rastro
 
-### Pré-requisitos```
+
+### Pré-requisitos
 
 - Java JDK 8 ou superior
 
-- Terminal/PowerShell### Exemplo de Programa
+- Terminal/PowerShell| Componente | Descrição |## 📖 Como Funciona
 
 
 
-### Compilar o ProjetoCrie um arquivo `exemplo.rastro`:
+### Compilar o Projeto|------------|-----------|
 
 
 
-```bash```rastro
+```bash| `TipoToken.java` | Enum com todos os tokens da linguagem |### 1. Análise Léxica
 
-# No diretório projeto/// Desenha um quadrado
+# No diretório projeto/
 
-cd projetoCANETA BAIXO
+cd projeto| `Token.java` | Representação de token (tipo, lexema, literal) |O `AnalisadorLexico` lê o código fonte caractere por caractere e gera uma lista de tokens:
 
-javac -source 8 -target 8 -d bin src\*.javaREPETIR 4 {
+javac -source 8 -target 8 -d bin src\*.java
 
-```    MOVER FRENTE 5
-
-    MOVER DIREITA 1
-
-### Executar um Programa}
+```| `AnalisadorLexico.java` | Tokenizador que converte código fonte em tokens |- Identifica palavras-chave (CANETA, MOVER, REPETIR, etc.)
 
 
 
-```bash// Move sem desenhar
+### Executar um Programa| `AnalisadorSintatico.java` | Parser que gera a AST |- Reconhece números inteiros
 
-# No diretório projeto/CANETA CIMA
 
-java -cp bin Compilador arquivo.rastroMOVER DIREITA 3
+
+```bash| `Comando.java` | Interface para nós da AST |- Identifica símbolos (`{`, `}`)
+
+# No diretório projeto/
+
+java -cp bin Compilador arquivo.rastro| `ComandoMover.java` | Nó AST para comando MOVER |- Ignora comentários (`//`) e espaços em branco
 
 ```
 
-// Desenha linha vertical
+| `ComandoCaneta.java` | Nó AST para comando CANETA |
 
-### Exemplo de ProgramaCANETA BAIXO
+### Exemplo de Programa
 
-MOVER FRENTE 3
+| `ComandoRepetir.java` | Nó AST para comando REPETIR |### 2. Análise Sintática
 
-Crie um arquivo `exemplo.rastro`:```
+Crie um arquivo `exemplo.rastro`:
 
+| `Robo.java` | Estado do robô (posição x,y e caneta) |O `AnalisadorSintatico` usa os tokens para construir uma AST seguindo a gramática:
 
+```rastro
 
-```rastroExecute:
+// Desenha um quadrado| `Grid.java` | Grade 50x50 para renderização |```
 
-// Desenha um quadrado```bash
+CANETA BAIXO
 
-CANETA BAIXOjava -cp bin Compilador exemplo.rastro
-
-REPETIR 4 {```
+REPETIR 4 {| `Interpretador.java` | Executor da AST |programa   → comando*
 
     MOVER FRENTE 5
 
-    MOVER DIREITA 1## 📚 Sintaxe da Linguagem
+    MOVER DIREITA 1| `Compilador.java` | Ponto de entrada (main) |comando    → cmd_mover | cmd_caneta | cmd_repetir
+
+}
+
+cmd_mover  → 'MOVER' direcao 'NUMERO'
+
+// Move sem desenhar
+
+CANETA CIMA## 📖 Como Funcionacmd_caneta → 'CANETA' ('CIMA' | 'BAIXO')
+
+MOVER DIREITA 3
+
+cmd_repetir → 'REPETIR' 'NUMERO' '{' programa '}'
+
+// Desenha linha vertical
+
+CANETA BAIXO### 1. Análise Léxicadirecao    → 'FRENTE' | 'DIREITA' | 'ESQUERDA' | 'CIMA'
+
+MOVER FRENTE 3
+
+```O `AnalisadorLexico` lê o código fonte caractere por caractere e gera uma lista de tokens:```
+
+
+
+Execute:- Identifica palavras-chave (CANETA, MOVER, REPETIR, etc.)
+
+```bash
+
+java -cp bin Compilador exemplo.rastro- Reconhece números inteiros### 3. Interpretação
+
+```
+
+- Identifica símbolos (`{`, `}`)O `Interpretador` percorre a AST e executa cada comando:
+
+## 📚 Sintaxe da Linguagem
+
+- Ignora comentários (`//`) e espaços em branco- Atualiza a posição do robô
+
+### Comandos Disponíveis
+
+- Controla o estado da caneta
+
+#### CANETA
+
+Controla se o robô desenha ou não enquanto se move.### 2. Análise Sintática- Desenha na grade quando a caneta está abaixada
+
+```rastro
+
+CANETA BAIXO  // Ativa o desenhoO `AnalisadorSintatico` usa os tokens para construir uma AST seguindo a gramática:- Exibe a grade final no console
+
+CANETA CIMA   // Desativa o desenho
+
+``````
+
+
+
+#### MOVERprograma   → comando*## 🚀 Como Executar
+
+Move o robô em uma direção por N passos.
+
+```rastrocomando    → cmd_mover | cmd_caneta | cmd_repetir
+
+MOVER FRENTE 5     // Move para frente 5 posições
+
+MOVER DIREITA 3    // Move para direita 3 posiçõescmd_mover  → 'MOVER' direcao 'NUMERO'### Pré-requisitos
+
+MOVER ESQUERDA 2   // Move para esquerda 2 posições
+
+MOVER CIMA 4       // Move para cima 4 posiçõescmd_caneta → 'CANETA' ('CIMA' | 'BAIXO')- Java JDK 8 ou superior
+
+```
+
+cmd_repetir → 'REPETIR' 'NUMERO' '{' programa '}'- Terminal/PowerShell
+
+#### REPETIR
+
+Executa um bloco de comandos N vezes.direcao    → 'FRENTE' | 'DIREITA' | 'ESQUERDA' | 'CIMA'
+
+```rastro
+
+REPETIR 3 {```### Compilar o Projeto
+
+    MOVER FRENTE 2
+
+    MOVER DIREITA 2
+
+}
+
+```### 3. Interpretação```bash
+
+
+
+#### ComentáriosO `Interpretador` percorre a AST e executa cada comando:# No diretório raiz do projeto
+
+```rastro
+
+// Isto é um comentário de linha- Atualiza a posição do robôjavac -source 8 -target 8 -d bin src\*.java
+
+```
+
+- Controla o estado da caneta```
+
+## 🎯 Exemplos de Uso
+
+- Desenha na grade quando a caneta está abaixada
+
+### Exemplo 1: Linha Simples
+
+```rastro- Exibe a grade final no console### Executar um Programa
+
+CANETA BAIXO
+
+MOVER FRENTE 10
+
+```
+
+## 🚀 Como Executar```bash
+
+### Exemplo 2: Quadrado
+
+```rastrojava -cp bin Compilador arquivo.rastro
+
+CANETA BAIXO
+
+REPETIR 4 {### Pré-requisitos```
+
+    MOVER FRENTE 5
+
+    MOVER DIREITA 5- Java JDK 8 ou superior
+
+    MOVER CIMA 5
+
+    MOVER ESQUERDA 5- Terminal/PowerShell### Exemplo de Programa
+
+}
+
+```
+
+
+
+### Exemplo 3: Escada### Compilar o ProjetoCrie um arquivo `exemplo.rastro`:
+
+```rastro
+
+CANETA BAIXO
+
+REPETIR 5 {
+
+    MOVER FRENTE 2```bash```rastro
+
+    MOVER DIREITA 2
+
+}# No diretório projeto/// Desenha um quadrado
+
+```
+
+cd projetoCANETA BAIXO
+
+## 🧪 Testes
+
+javac -source 8 -target 8 -d bin src\*.javaREPETIR 4 {
+
+Os arquivos de teste estão incluídos no diretório `projeto/`:
+
+- `arquivo.rastro` - Teste básico de movimentação```    MOVER FRENTE 5
+
+- `quadrado.rastro` - Desenha forma quadrada
+
+- `exemplo_completo.rastro` - Exemplo com múltiplos comandos e comentários    MOVER DIREITA 1
+
+
+
+Execute qualquer teste:### Executar um Programa}
+
+```bash
+
+cd projeto
+
+java -cp bin Compilador arquivo.rastro
+
+``````bash// Move sem desenhar
+
+
+
+## 📖 Documentação# No diretório projeto/CANETA CIMA
+
+
+
+Para mais detalhes técnicos, consulte a pasta `doc/` que contém:java -cp bin Compilador arquivo.rastroMOVER DIREITA 3
+
+- Especificação completa da linguagem
+
+- Diagramas de arquitetura```
+
+- Guias de desenvolvimento
+
+// Desenha linha vertical
+
+## 🤝 Contribuindo
+
+### Exemplo de ProgramaCANETA BAIXO
+
+Contribuições são bem-vindas! Sinta-se livre para:
+
+1. Fazer fork do projetoMOVER FRENTE 3
+
+2. Criar uma branch para sua feature (`git checkout -b feature/NovaFeature`)
+
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)Crie um arquivo `exemplo.rastro`:```
+
+4. Push para a branch (`git push origin feature/NovaFeature`)
+
+5. Abrir um Pull Request
+
+
+
+## 📝 Licença```rastroExecute:
+
+
+
+Este projeto é licenciado sob a MIT License.// Desenha um quadrado```bash
+
+
+
+## 👨‍💻 AutorCANETA BAIXOjava -cp bin Compilador exemplo.rastro
+
+
+
+Desenvolvido como projeto educacional para demonstrar conceitos de compiladores e interpretadores.REPETIR 4 {```
+
+
+
+---    MOVER FRENTE 5
+
+
+
+**Rastro Lang** - Aprendendo compiladores de forma visual e divertida! 🎨🤖    MOVER DIREITA 1## 📚 Sintaxe da Linguagem
+
 
 }
 
