@@ -1,0 +1,14 @@
+// Desenha um quadrado
+CANETA BAIXO
+REPETIR 4 {
+    MOVER FRENTE 5
+    MOVER DIREITA 1
+}
+
+// Move sem desenhar
+CANETA CIMA
+MOVER DIREITA 3
+
+// Desenha outra linha
+CANETA BAIXO
+MOVER FRENTE 3
